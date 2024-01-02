@@ -22,21 +22,6 @@
     animation-fill-mode: forwards;
 }
 
-@media (max-width: 1165px) {
-    .preview-background-description {
-        top: 80%;
-        left: 10px;
-        right: 10px;
-        height: 200px;
-        width: 100%;
-        animation: none;
-    }
-
-    .preview-background {
-        margin-bottom: 200px;
-    }
-}
-
 .preview-background-description div {
     margin-inline: 120px;
 }
@@ -45,13 +30,13 @@
     font-size: 26px;
     font-weight: 500;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .preview-background-description .preview-background-inner {
     font-size: 15px;
     color: white;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .preview-background-description .start-button {
@@ -78,6 +63,80 @@
 
 .preview-background-description a:hover {
     border-bottom: 1px white solid;
+}
+
+@media (max-width: 1165px) {
+    .preview-background-description {
+        background-color: rgb(40, 114, 79);
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: 85%;
+        width: 100%;
+        animation: none;
+    }
+
+    .preview-background {
+        margin-bottom: 30%;
+    }
+
+    .preview-background-description .start-button {
+        color: rgb(40, 114, 79);
+    }
+}
+
+@media (max-width: 880px) {
+    .preview-background-description {
+        height: 105%;
+    }
+
+    .preview-background {
+        margin-bottom: 35%;
+    }
+
+    .preview-background-description div {
+        margin-inline: 80px;
+    }
+}
+
+@media (max-width: 730px) {
+    .preview-background-description {
+        height: 115%;
+    }
+
+    .preview-background {
+        margin-bottom: 40%;
+    }
+
+    .preview-background-description div {
+        margin-inline: 70px;
+    }
+}
+
+@media (max-width: 670px) {
+    .preview-background-description {
+        height: 125%;
+    }
+
+    .preview-background {
+        margin-bottom: 50%;
+    }
+
+    .preview-background-description div {
+        margin-inline: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .preview-background-description .preview-background-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .preview-background-description .preview-background-inner {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 @keyframes background-title-animation {
