@@ -26,6 +26,31 @@ header {
     font-weight: 500;
 }
 
+.middle-section {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.middle-section a {
+    color: black;
+    text-decoration: none;
+}
+
+.middle-section a i {
+    margin-right: 7px;
+}
+
+.middle-section a:hover {
+    border-bottom: 1px black solid;
+}
+
+@media (max-width: 925px) {
+    .middle-section {
+        display: none;
+    }
+}
+
 .right-section {
     display: flex;
     align-items: center;
