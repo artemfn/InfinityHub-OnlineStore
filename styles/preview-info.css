@@ -10,7 +10,7 @@
     .preview-info {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        padding-inline: 90px;
+        padding-inline: 50px;
     }
 }
 
@@ -18,7 +18,7 @@
     .preview-info {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        padding-inline: 90px;
+        padding-inline: 50px;
     }
 }
 

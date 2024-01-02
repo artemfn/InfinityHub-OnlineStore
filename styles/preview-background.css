@@ -1,7 +1,90 @@
-main .preview-background {
-   margin-bottom: 150px;
+.preview-background {
+    position: relative;
+    margin-bottom: 120px;
 }
 
-main .preview-background img {
+.preview-background img {
     width: 100%
+}
+
+.preview-background-description {
+    background-color: rgba(40, 114, 79, 0.88);
+    position: absolute;
+    top: 0;
+    left: -41%;
+    bottom: 4px;
+    width: 41%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: background-title-animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@media (max-width: 1135px) {
+    .preview-background-description {
+        top: 80%;
+        left: 10px;
+        right: 10px;
+        height: 200px;
+        width: 100%;
+        animation: none;
+    }
+
+    .preview-background {
+        margin-bottom: 200px;
+    }
+}
+
+.preview-background-description div {
+    margin-inline: 120px;
+}
+
+.preview-background-description .preview-background-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.preview-background-description .preview-background-inner {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.preview-background-description .start-button {
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    height: 37px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(40, 114, 79, 0.85);
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.preview-background-description .start-button:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.preview-background-description a {
+    color: white;
+    text-decoration: none;
+}
+
+.preview-background-description a:hover {
+    border-bottom: 1px white solid;
+}
+
+@keyframes background-title-animation {
+    0% {
+        left: -41%;
+    }
+    100% {
+        left: 0;
+    }
 }
