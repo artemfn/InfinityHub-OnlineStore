@@ -1,6 +1,6 @@
 .preview-background {
     position: relative;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
 .preview-background img {
@@ -22,7 +22,7 @@
     animation-fill-mode: forwards;
 }
 
-@media (max-width: 1135px) {
+@media (max-width: 1165px) {
     .preview-background-description {
         top: 80%;
         left: 10px;
@@ -43,7 +43,7 @@
 
 .preview-background-description .preview-background-title {
     font-size: 26px;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
     margin-bottom: 10px;
 }
@@ -61,7 +61,7 @@
     height: 37px;
     width: 100px;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     color: rgba(40, 114, 79, 0.85);
     cursor: pointer;
     margin-right: 12px;

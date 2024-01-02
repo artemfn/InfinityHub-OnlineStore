@@ -6,8 +6,58 @@
 
 .extra-info {
     width: 90%;
+    position: relative;
 }
 
-.extra-info img {
+.extra-info .background {
     width: 100%;
+}
+
+.extra-info .phone-image {
+    position: absolute;
+    bottom: 4px;
+    right: 10%;
+    height: 90%;
+}
+
+.extra-info .phone-image2 {
+    position: absolute;
+    bottom: 4px;
+    right: 17%;
+    height: 70%;
+}
+
+.extra-info .inner-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.extra-info .inner-container .inner-title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.extra-info .inner-container .inner {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.extra-info .inner-container .join-beta-button {
+    height: 37px;
+    width: 180px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(40, 114, 79);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
 }
