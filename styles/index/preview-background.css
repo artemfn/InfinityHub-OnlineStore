@@ -87,7 +87,7 @@
 
 @media (max-width: 880px) {
     .preview-background-description {
-        height: 105%;
+        height: 80%;
     }
 
     .preview-background {
@@ -97,11 +97,16 @@
     .preview-background-description div {
         margin-inline: 80px;
     }
+
+    .preview-background img {
+        height: 250px;
+        object-fit: cover;
+    }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 750px) {
     .preview-background-description {
-        height: 115%;
+        height: 80%;
     }
 
     .preview-background {
@@ -115,7 +120,7 @@
 
 @media (max-width: 670px) {
     .preview-background-description {
-        height: 125%;
+        height: 80%;
     }
 
     .preview-background {

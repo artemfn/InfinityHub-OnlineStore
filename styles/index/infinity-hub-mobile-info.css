@@ -1,33 +1,48 @@
-.extra-info-container {
+.info-container {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 120px;
 }
 
-.extra-info {
+.info {
     width: 90%;
     position: relative;
 }
 
-.extra-info .background {
+.info .background {
     width: 100%;
 }
 
-.extra-info .phone-image {
+.info .phone-image {
     position: absolute;
     bottom: 4px;
     right: 10%;
     height: 90%;
+    /*
+    animation-name: image-up-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    */
 }
 
-.extra-info .phone-image2 {
+.info .phone-image2 {
     position: absolute;
     bottom: 4px;
     right: 17%;
     height: 70%;
+    /*
+    animation-name: image-up-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    */
 }
 
-.extra-info .inner-container {
+.info .inner-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -39,18 +54,18 @@
     padding-left: 100px;
 }
 
-.extra-info .inner-container .inner-title {
+.info .inner-container .inner-title {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.extra-info .inner-container .inner {
+.info .inner-container .inner {
     font-size: 15px;
     margin-bottom: 15px;
 }
 
-.extra-info .inner-container .join-beta-button {
+.info .inner-container .join-beta-button {
     height: 37px;
     width: 180px;
     border: none;
@@ -61,3 +76,14 @@
     font-weight: 500;
     cursor: pointer;
 }
+
+/* TODO: testing
+@keyframes image-up-animation {
+    0% {
+        bottom: -30%;
+    }
+    100% {
+        bottom: 4px;
+    }
+}
+*/

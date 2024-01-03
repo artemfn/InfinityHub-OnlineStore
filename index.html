@@ -1,13 +1,22 @@
+<!--
+    This code may be not so good amd optimized, but noe I'm just studing.
+    It's my first big project (front-end), but I really try to make it useble enoght. 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Links of all style files -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/preview-background.css">
-    <link rel="stylesheet" href="styles/preview-info.css">
-    <link rel="stylesheet" href="styles/extra-info.css">
+    <link rel="stylesheet" href="styles/index/header.css">
+    <link rel="stylesheet" href="styles/index/preview-background.css">
+    <link rel="stylesheet" href="styles/index/preview-info.css">
+    <link rel="stylesheet" href="styles/index/infinity-hub-mobile-info.css">
+    <link rel="stylesheet" href="styles/index/footer.css">
+
     <link rel="shortcut icon" href="icons/logo-icon.ico">
     <title>Infinity Hub</title>
 </head>
@@ -21,12 +30,14 @@
                 <p>Infinity Hub</p>
             </div>
         </section>
+
         <section class="middle-section">
             <a href="index.html"><i class='bx bx-home'></i>Home</a>
             <a href="/"><i class='bx bx-store'></i>Store</a>
-            <a href="/"><i class='bx bx-user'></i>User</a>
             <a href="/"><i class='bx bx-cog'></i>Settings</a>
+            <a href="/"><i class='bx bx-help-circle'></i>Help</a>
         </section>
+
         <section class="right-section">
             <button class="login-button">Log in</button>
             <button class="singin-button">Sing in</button>
@@ -50,7 +61,9 @@
                 </div>
             </div>
         </div>
+
         <h1 class="preview-info-title">About the platform</h1>
+
         <div class="preview-info">
             <section>
                 <div class="preview-image">
@@ -114,9 +127,15 @@
                 </div>
             </section>
         </div>
-        <div class="extra-info-container">
-            <div class="extra-info">
-                <img class="background" src="images/extra-info-background.png" alt="Background">
+
+        <!--
+            This part of the main block does not ontimized to different screen sizes.
+            When a screen is small it can looks not correctly.
+            At the moment I can't optimize this block, but I will improve it in the nearest future.
+        -->
+        <div class="info-container">
+            <div class="info">
+                <img class="background" src="images/infinity-hub-mobile-info-background.png" alt="Background">
                 <img class="phone-image" src="images/phone-image.png" alt="Image">
                 <img class="phone-image2" src="images/phone-image2.png" alt="Image">
                 <div class="inner-container">
@@ -133,5 +152,71 @@
             </div>
         </div>
     </main>
+
+    <footer>
+        <div class="what-new-block">
+            <p>What's new?</p>
+            <a href="/">Infinity Hub Mobile</a>
+        </div>
+
+        <div class="about-block">
+            <p>About</p>
+            <a href="/">Platform overview</a>
+            <a href="/">User-friendly interface</a>
+            <a href="/">Diverse product range</a>
+            <a href="/">Security</a>
+        </div>
+
+        <div class="contacts-block">
+            <p>Contacts</p>
+            <a href="/"><i class='bx bxl-telegram'></i>Telegram</a>
+            <a href="/"><i class='bx bxl-instagram'></i>Instagram</a>
+            <a href="/"><i class='bx bxl-facebook'></i>Facebook</a>
+            <a href="/"><i class='bx bxl-github'></i>GitHub</a>
+        </div>
+
+        <div class="communication-block">
+            <span>
+                Infinity Hub is a new, not yet sufficiently developed platform,
+                but we will make it a high-level platform in the field of
+                universal marketplaces. Found an error or bug? Help fix it,
+                report the find here.
+            </span>
+            <button>Report</button>
+        </div>
+    </footer>
+
+    <script>
+        // DOTO: testing
+
+        /*
+        function isElementInViewport(el) {
+        let rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function checkAnimation() {
+            let phoneImage = document.querySelector('.extra-info .phone-image');
+            let phoneImage2 = document.querySelector('.extra-info .phone-image2');
+
+            if (isElementInViewport(phoneImage)) {
+                phoneImage.style.animationPlayState = 'running';
+            }
+
+            if (isElementInViewport(phoneImage2)) {
+                phoneImage2.style.animationPlayState = 'running';
+            }
+        }
+
+        window.addEventListener('scroll', checkAnimation);
+
+        window.addEventListener('DOMContentLoaded', checkAnimation);
+        */
+    </script>
 </body>
 </html>
