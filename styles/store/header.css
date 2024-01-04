@@ -72,6 +72,7 @@ header {
     display: flex;
     align-items: center;
     cursor: pointer;
+    font-weight: 500;
 }
 
 .right-section i {
