@@ -2,31 +2,46 @@ class LocalStorageController {
     keyList = [];
 
     constructor() {
-        if (!localStorage.getItem('keyList') === null) {
-            this.keyList = localStorage.getItem('keyList');
+        if (localStorage.getItem('keyList') !== null) {
+            try {
+                this.keyList = JSON.parse(localStorage.getItem('keyList'));
+            }
+            catch {
+                this.keyList = [];
+            }
         }
     }
 
     trySave(key, object) {
-        if (!this.keyList.includes(key)) {
+        if (!this.keyList.includes(key)) {     
             this.keyList.push(key);
-            localStorage.setItem('keyList', this.keyList);
+
             const sObject = JSON.stringify(object);
+            const sKeyList = JSON.stringify(this.keyList);
+
+            localStorage.setItem('keyList', sKeyList);
             localStorage.setItem(key, sObject); 
         }
     }
 
     tryGet(key) {
-        if (this.keyList.includes(key)) {
-            return JSON.parse(localStorage.getItem(key));
-        }
+        const storedValue = localStorage.getItem(key);
 
+        if (storedValue !== null) {
+            return JSON.parse(storedValue);
+        }
         return null;
     }
 
     tryRemove(key) {
         if (this.keyList.includes(key)) {
-            localStorage.removeItem(key);
+            const index = this.keyList.indexOf(key);
+
+            if (index > -1) {
+                this.keyList.splice(index, 1);
+                localStorage.setItem('keyList', JSON.stringify(this.keyList));
+                localStorage.removeItem(key);
+            }
         }
     }
 }
