@@ -66,3 +66,9 @@
     border-radius: 3px;
     color: white;
 }
+
+.form-container .warning {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
