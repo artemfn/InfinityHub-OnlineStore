@@ -17,4 +17,5 @@
 .track-bar a {
     font-size: 25px;
     color: black;
+    cursor: pointer;
 }

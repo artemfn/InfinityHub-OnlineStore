@@ -32,7 +32,5 @@ document.querySelector('.singin-button').addEventListener('click', () => {
 
     controller.trySave(user.name, user);
 
-    console.log(user);
-
-    // go to the next page
+    window.location.href = `store.html?name=${user.name}`;
 });

@@ -23,6 +23,10 @@ document.querySelector('.login-button').addEventListener('click', () => {
     const user = controller.tryGet(name);
 
     if (user.password === password) {
-        console.log(user);
+        window.location.href = `store.html?name=${user.name}`;
+    }
+    else {
+        warning.style.display = 'inline-block';
+        warning.innerHTML = 'Warning! Invalid password, please try another.'
     }
 });
