@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css">
     <link rel="stylesheet" href="styles/product/general.css">
     <link rel="stylesheet" href="styles/product/header.css">
-    <link rel="stylesheet" href="styles/product/track-bar.css">
+    <link rel="stylesheet" href="styles/product/main.css">
     <title>Infinity Hub</title>
 </head>
 <body>
@@ -38,9 +38,12 @@
                 <input class="name-input" type="text" placeholder="Name">
                 <input class="price-input" type="number" placeholder="Price">
                 <input class="description-number" type="text" placeholder="Description">
-                <input class="photo-input" type="file" placeholder="Photo">
-                <button class="publish-button">Publish</button>
+                <input class="photo-input" type="file" accept="image/png, image/jpg, image/jpeg" placeholder="Photo">
             </form>
+            <p class="warning">
+                <!-- Here will be a warning message if user enter an invalid data -->
+            </p>
+            <button class="publish-button">Publish</button>
         </div>
     </main>
 
