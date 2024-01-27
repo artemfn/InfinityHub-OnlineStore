@@ -1,3 +1,6 @@
+// localStorage.setItem('product-list', JSON.stringify([/* empty array */]));
+// added a product-list array to lacal storage
+
 const urlArgs = new URLSearchParams(window.location.search);
 const userArgs = urlArgs.get('name');
 

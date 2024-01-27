@@ -3,6 +3,21 @@
 const urlArgs = new URLSearchParams(window.location.search);
 const userArgs = urlArgs.get('name');
 
+const products = JSON.parse(localStorage.getItem('product-list'));
+
+console.log(products);
+
+if (products) {
+    products.forEach(element => {
+        if (element) {
+            console.log(element);
+
+            document.querySelector('main').innerHTML += element;
+        }
+    });
+}
+
+
 if (userArgs) {
     const userName = decodeURIComponent(userArgs);
 
